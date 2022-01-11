@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/',async(req,res) =>{
     try{
-        res.send("login");
+        res.send("LandingPage");
     }catch(err){
         console.error(err);
         res.send("Error " + err);

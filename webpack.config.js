@@ -21,9 +21,35 @@ module.exports = {
                 }
             },
             {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
+            },
+            {
                 test: /\.s[ac]ss$/i,
-                use: ["style-loader", "css-loader", "sass-loader"]
+                use: [
+                    "cache-loader",
+                    {
+                        loader: 'thread-loader',
+                        // loaders with equal options will share worker pools
+                        options: {
+                            // number of jobs a worker processes in parallel
+                            // defaults to 20
+                            workerParallelJobs: 50,
+
+                        },
+                    },
+                    "style-loader",
+                    "css-loader",
+                    "fast-sass-loader",
+                ]
             },
         ]
-    }
+    },
+    optimization: {
+        runtimeChunk: true,
+    },
 };

@@ -19,7 +19,7 @@ const usersRouter = require("./routes/users_route");
 
 app.use('/api/users', usersRouter);
 app.use('/api/data',dataRouter);
-app.use('/login',loginRouter);
+app.use('/landingPage',loginRouter);
 
 
 const port = process.env.PORT || 3000;

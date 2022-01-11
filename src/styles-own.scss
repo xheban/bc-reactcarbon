@@ -1,0 +1,29 @@
+@import '../node_modules/@carbon/layout/scss/generated/_spacing.scss';
+
+.fs20{
+  font-size: 20px;
+}
+.fs18{
+  font-size: 18px;
+}
+
+.width100{
+  width: 100%;
+}
+
+.pb2{
+  padding-bottom: $spacing-02;
+}
+
+.pb4{
+  padding-bottom: $spacing-04;
+}
+
+.pb6{
+  padding-bottom: $spacing-06;
+}
+
+.text-input__label{
+  font-size: 18px;
+  margin: auto;
+}

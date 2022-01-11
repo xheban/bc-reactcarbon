@@ -1,0 +1,11 @@
+@import '../node_modules/carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import '../node_modules/carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import '../node_modules/carbon-components/scss/globals/scss/typography.scss';
+@import '../node_modules/carbon-components/scss/globals/scss/vars.scss';
+
+@import 'components/header/Header';
+@import 'content/landingPage/LandingPage';
+@import 'content/aboutProjectPage/AboutProjectPage';
+@import 'components/login/Login';
+@import 'components/register/Register';
+@import 'styles-own';
