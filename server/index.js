@@ -1,4 +1,4 @@
-require('dotenv').config({path:'./server/.env'})
+// require('dotenv').config({path:'./server/.env'})
 const express = require('express');
 const path = require('path');
 
@@ -14,12 +14,10 @@ app.get('/', (req, res) => {
 });
 
 const dataRouter = require("./routes/data_route");
-const loginRouter = require("./routes/login_route");
 const usersRouter = require("./routes/users_route");
 
 app.use('/api/users', usersRouter);
 app.use('/api/data',dataRouter);
-app.use('/landingPage',loginRouter);
 
 
 const port = process.env.PORT || 3000;

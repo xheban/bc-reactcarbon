@@ -36,6 +36,9 @@ const MainHeader = () => (
                 <HeaderNavigation aria-label="Carbon Tutorial">
                     <HeaderMenuItem element={Link} to="/repos" href="/repos">O projekte</HeaderMenuItem>
                 </HeaderNavigation>
+                <HeaderNavigation aria-label="Carbon Tutorial">
+                    <HeaderMenuItem element={Link} to="/main" href="/main">Main</HeaderMenuItem>
+                </HeaderNavigation>
                 <SideNav
                     aria-label="Side navigation"
                     expanded={isSideNavExpanded}
@@ -47,12 +50,12 @@ const MainHeader = () => (
                     </SideNavItems>
                 </SideNav>
                 <HeaderGlobalBar>
-                    <HeaderGlobalAction aria-label="User Avatar">
-                        <UserAvatar32 />
-                    </HeaderGlobalAction>
-                    <HeaderGlobalAction aria-label="App Switcher">
-                        <AppSwitcher32 />
-                    </HeaderGlobalAction>
+                    {/*<HeaderGlobalAction aria-label="User Avatar">*/}
+                    {/*    <UserAvatar32 />*/}
+                    {/*</HeaderGlobalAction>*/}
+                    {/*<HeaderGlobalAction aria-label="App Switcher">*/}
+                    {/*    <AppSwitcher32 />*/}
+                    {/*</HeaderGlobalAction>*/}
                 </HeaderGlobalBar>
             </Header>
         )}
